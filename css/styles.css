@@ -1,0 +1,20 @@
+*   {
+    background-color: rgb(216, 81, 81);
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+section article ul li{
+    background-color: darkturquoise
+}
+
+ol li{
+    color: white;
+}
+
+.orange{
+
+}

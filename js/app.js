@@ -1,11 +1,31 @@
+'use strict'
+var userName = prompt('Greetings, classmate. What\'s your name?');
+console.log();
 
-var likesMozzarellaSticks = prompt('Do you love Mozzarella Sticks?');
+alert('Thank you for telling me you name, ' + userName + '!');
 
-likesMozzarellaSticks = likesMozzarellaSticks.toLowerCase();
+var firstName = prompt('Do you remember my first name?');
+console.log(firstName + 'Ryan');
 
-if(likesMozzarellaSticks === 'yes'){
-  alert('Awesome, they\'re my favorite!');
+firstName = firstName.toLowerCase();
+if(firstName === 'ryan'){
+  alert('Nice! I am honored that you remember my name!');
 } else {
-  alert('You\'re crazy!');
+  alert('That\'s ok. I\'m not good with names either. My first name is Ryan.');
 }
+
+var work = prompt(userName + ', do you remember where I currently work?')
+console.log(work + 'FedEx');
+
+work = work.toLowerCase();
+if(work === 'fedex'){
+  alert('Man, you have a great memory!');
+} else {
+  alert('It\'s cool, ' + userName + '. I work at Fedex.');
+}
+
+
+
+
+
 

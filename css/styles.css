@@ -8,7 +8,8 @@
     width: 20em;
     float: right;
     border-radius: 50%;
-    position: static;
+    position: relative;
+    left: -50px;
     border: 2px rgb(232, 148, 148);
     
     
@@ -17,6 +18,7 @@
 h1  {
     font-family: Tahoma, Geneva, Verdana;
     font-style: oblique;
+    font-size: 30px;
     margin: 5%;
     padding: 5px 30px 5px 5px
     font-weight: normal; 

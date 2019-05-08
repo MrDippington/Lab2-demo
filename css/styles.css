@@ -1,20 +1,46 @@
 *   {
-    background-color: rgb(216, 81, 81);
+    background-color: rgb(196, 95, 95);
     color: aliceblue;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-section article ul li{
-    background-color: darkturquoise
+.center {
+    height: 20em;
+    width: 20em;
+    float: right;
+    border-radius: 50%;
+    position: static;
+    border: 2px rgb(232, 148, 148);
+    
+    
 }
 
-ol li{
-    color: white;
+h1  {
+    font-family: Tahoma, Geneva, Verdana;
+    font-style: oblique;
+    margin: 5%;
+    padding: 5px 30px 5px 5px
+    font-weight: normal; 
+    width: 5%;
+    height: 20%;
+}   
+
+th  {
+    font-weight: bolder;
+    color: rgb(138, 25, 48)  
 }
 
-.orange{
+table, th, td   {
+    background-color: rgb(250, 181, 195);
+    width: 40%;
+    padding: 1%;
+    margin: 5%;
+    border: 3px solid rgb(252, 245, 244);
+}
 
+td {
+    color: rgb(80, 26, 26);
+}
+
+table {
+    width: 60%;
 }

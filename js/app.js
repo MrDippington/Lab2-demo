@@ -95,7 +95,7 @@ console.log(heroList + ' are my favorite super heroes');
 
 var answer = false;
 
-for(var i = 0; i < 6; i++){
+for(var n = 0; n < 6; n++){
   for(var j = 0; j < heroList.length; j++){
     if(hero.toLowerCase() === heroList[j]){
       answer = true;

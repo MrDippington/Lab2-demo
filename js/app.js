@@ -2,101 +2,100 @@
 
 var correctAnswers = 0;
 
-var lastName = prompt('Is my last name Williams?');
-console.log(lastName + ' is Sanders');
+// var lastName = prompt('Is my last name Williams?');
+// console.log(lastName + ' is Sanders');
 
-lastName = lastName.toLowerCase();
-if(lastName === 'yes' || lastName === 'y'){
-  alert('No, my last name is Sanders.');
-} else {
-  correctAnswers = correctAnswers+1;
-  alert('Correct!');
-}
-
-
-
-var work = prompt('Do I currently work at Fedex?');
-console.log(work + ' is FedEx');
-
-work = work.toLowerCase();
-if(work === 'yes' || work === 'y'){
-  correctAnswers = correctAnswers+1;
-  alert('Got that right!');
-} else {
-  alert('Wrong. I do work at Fedex.');
-}
+// lastName = lastName.toLowerCase();
+// if(lastName === 'yes' || lastName === 'y'){
+//   alert('No, my last name is Sanders.');
+// } else {
+//   correctAnswers = correctAnswers+1;
+//   alert('Correct!');
+// }
 
 
 
-var from = prompt('Am I from Seattle?');
-console.log(from + ' I am not from Seattle');
+// var work = prompt('Do I currently work at Fedex?');
+// console.log(work + ' is FedEx');
 
-from = from.toLowerCase();
-if(from === 'no' || from === 'n'){
-  correctAnswers = correctAnswers+1;
-  alert('That\'s right! I\'m from Augusta, Georgia!');
-} else {
-  alert('WRONG! I\'m from Augusta, Georgia.');
-}
-
-
-
-var military = prompt('Did I serve in the military?');
-console.log(military + ' I did serve in the military');
-
-military = military.toLowerCase();
-if(military === 'no' || military === 'n'){
-  alert('I served in the army.');
-} else {
-  correctAnswers = correctAnswers+1;
-  alert('Correct!');
-}
+// work = work.toLowerCase();
+// if(work === 'yes' || work === 'y'){
+//   correctAnswers = correctAnswers+1;
+//   alert('Got that right!');
+// } else {
+//   alert('Wrong. I do work at Fedex.');
+// }
 
 
-var fan = prompt('Am I a Game of Thrones Fan?');
-console.log(fan + ' I am a Game of Thrones Fan');
 
-fan = fan.toLowerCase();
-if(fan === 'yes' || fan === 'y'){
-  correctAnswers = correctAnswers+1;
-  alert('YES! WINTER IS HERE!');
-} else {
-  alert('Incorrect.');
-}
+// var from = prompt('Am I from Seattle?');
+// console.log(from + ' I am not from Seattle');
 
-var faveAnswer = '6';
-var fave = prompt('What is my favorite number?');
-console.log(fave + ' My favorite number is 6');
+// from = from.toLowerCase();
+// if(from === 'no' || from === 'n'){
+//   correctAnswers = correctAnswers+1;
+//   alert('That\'s right! I\'m from Augusta, Georgia!');
+// } else {
+//   alert('WRONG! I\'m from Augusta, Georgia.');
+// }
 
-for(var i=1; i<4; i++){
-  if(faveAnswer === fave){
-    correctAnswers = correctAnswers+1;
-    alert('RIGHT!!!');
-    break;
-  } else if(fave < faveAnswer) {
-    fave = prompt('Guess higher.');
-  } else if(fave > faveAnswer){
-    fave = prompt('Guess Lower');
-  }
-}
 
-// var heroList = ['Black Panther', 'Iron Man', 'Batman', 'Spiderman', 'Wolverine', 'The Hulk'];
-// var hero = prompt('Can you name one of my favorite super-heroes?');
-// console.log(heroList + ' are my favorite super heroes');
 
-// heroList = heroList.toLowerCase();
+// var military = prompt('Did I serve in the military?');
+// console.log(military + ' I did serve in the military');
 
-// for(var heroList=1; heroList<6; heroList++){
-//   if(hero === heroList){
+// military = military.toLowerCase();
+// if(military === 'no' || military === 'n'){
+//   alert('I served in the army.');
+// } else {
+//   correctAnswers = correctAnswers+1;
+//   alert('Correct!');
+// }
+
+
+// var fan = prompt('Am I a Game of Thrones Fan?');
+// console.log(fan + ' I am a Game of Thrones Fan');
+
+// fan = fan.toLowerCase();
+// if(fan === 'yes' || fan === 'y'){
+//   correctAnswers = correctAnswers+1;
+//   alert('YES! WINTER IS HERE!');
+// } else {
+//   alert('Incorrect.');
+// }
+
+// var faveAnswer = '6';
+// var fave = prompt('What is my favorite number?');
+// console.log(fave + ' My favorite number is 6');
+
+// for(var i=1; i<4; i++){
+//   if(faveAnswer === fave){
 //     correctAnswers = correctAnswers+1;
-//     alert('YOU KNOW ME SO WELL!!!');
+//     alert('RIGHT!!!');
 //     break;
-//   } else {
-//     hero === prompt('Guess again, loser.');
+//   } else if(fave < faveAnswer) {
+//     fave = prompt('Guess higher.');
+//   } else if(fave > faveAnswer){
+//     fave = prompt('Guess Lower');
 //   }
 // }
 
-var correctAnswers = prompt('You guessed ' + correctAnswers + ' questions right out of 6.');
+var heroList = ['black panther', 'iron man', 'batman', 'spiderman', 'wolverine', 'superman'];
+var hero = prompt('Can you name one of my favorite super-heroes?');
+console.log(heroList + ' are my favorite super heroes');
+
+heroList = heroList.toUpperCase();
+for(var i=0; i<5; i++){
+  if(hero == heroList){
+    correctAnswers = correctAnswers+1;
+    alert('YOU KNOW ME SO WELL!!!');
+    break;
+  } else {
+    hero = prompt('Guess again, loser.');
+  }
+}
+
+// var correctAnswers = prompt('You guessed ' + correctAnswers + ' questions right out of 6.');
 
 // var heroList = ['Black Panther', 'Iron Man', 'Captain America', 'Spiderman', 'Doctor Strange', 'The Hulk'];
 // var Avengers = prompt('Name some of my favorite Avengers heroes.');

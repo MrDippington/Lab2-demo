@@ -89,23 +89,36 @@ for(var i=1; i<4; i++){
   }
 }
 
-// var heroList = ['Black Panther', 'Iron Man', 'Batman', 'Spiderman', 'Wolverine', 'The Hulk'];
-// var hero = prompt('Can you name one of my favorite super-heroes?');
-// console.log(heroList + ' are my favorite super heroes');
+var heroList = ['black panther', 'iron man', 'batman', 'spiderman', 'wolverine', 'the hulk'];
+var hero = prompt('Can you name one of my favorite super-heroes?');
+console.log(heroList + ' are my favorite super heroes');
 
-// heroList = heroList.toLowerCase();
+var answer = false;
 
-// for(var heroList=1; heroList<6; heroList++){
-//   if(hero === heroList){
-//     correctAnswers = correctAnswers++;
-//     alert('YOU KNOW ME SO WELL!!!');
-//     break;
-//   } else {
-//     hero === prompt('Guess again, loser.');
-//   }
-// }
+for(var i = 0; i < 6; i++){
+  for(var j = 0; j < heroList.length; j++){
+    if(hero.toLowerCase() === heroList[j]){
+      answer = true;
+    }
+  }
+  if(answer === false){
+    hero = prompt('Guess again, loser.');
+  } else if(answer === true){
+    alert('YOU KNOW ME SO WELL!!!');
+    correctAnswers++;
+    break;
+  }
+ 
+  // if(hero.toLowerCase() === heroList[i]){
+  //   correctAnswers++;
+  //   alert('YOU KNOW ME SO WELL!!!');
+  //   break;
+  // } else {
+  //   hero = prompt('Guess again, loser.');
+  // }
+}
 
-var correctAnswers = prompt('You guessed ' + correctAnswers + ' questions right out of 6.');
+// var correctAnswers = prompt('You guessed ' + correctAnswers + ' questions right out of 6.');
 
 // var heroList = ['Black Panther', 'Iron Man', 'Captain America', 'Spiderman', 'Doctor Strange', 'The Hulk'];
 // var Avengers = prompt('Name some of my favorite Avengers heroes.');

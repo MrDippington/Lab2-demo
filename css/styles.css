@@ -4,13 +4,12 @@
 }
 
 .center {
-    height: 20em;
-    width: 20em;
-    float: right;
+    height: 12em;
+    width: 12em;
     border-radius: 50%;
-    position: relative;
-    left: -50px;
-    border: 2px rgb(232, 148, 148);
+    position: absolute;
+    left: 20em;
+    top: 3em;
     
     
 }
@@ -48,4 +47,8 @@ td {
 
 table {
     width: 60%;
+}
+
+img {
+
 }
